@@ -83,13 +83,6 @@ export const Login = () => {
             Log in to continue your focus journey.
           </p>
 
-          {/* FIX 3: Demo Mode Banner */}
-          <div className="mb-6 flex items-center gap-3 rounded-2xl bg-[#5B8CFF]/10 border border-[#5B8CFF]/20 px-4 py-3">
-            <span className="text-lg">🚀</span>
-            <p className="text-sm font-medium text-[#5B8CFF]">
-              Demo Mode — No credentials required. Click Sign In to explore.
-            </p>
-          </div>
 
           <form onSubmit={handleLogin}>
             <FloatingInput icon={Mail} label="Email Address" type="email" required />

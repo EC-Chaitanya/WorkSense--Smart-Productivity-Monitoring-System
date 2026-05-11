@@ -35,7 +35,4 @@ export const router = createBrowserRouter([
   {
     path: "*",
     Component: () => <Navigate to="/" replace />,
-  },
-], {
-  basename: "/WorkSense--Smart-Productivity-Monitoring-System"
-});
+]);

@@ -7,7 +7,7 @@ import { ThemeToggle } from "../components/ThemeToggle";
 import { Modal } from "../components/Modal";
 import { Button } from "../components/Button";
 
-import { LayoutDashboard, Target, Settings, LogOut, ChevronRight, BarChart2, FileText, User, Menu, X } from "lucide-react";
+import { LayoutDashboard, Target, LogOut, ChevronRight, BarChart2, FileText, User, Menu, X } from "lucide-react";
 import { cn } from "../utils";
 
 const SIDEBAR_ITEMS = [
@@ -15,7 +15,6 @@ const SIDEBAR_ITEMS = [
   { icon: BarChart2, label: "Analytics", href: "/analytics" },
   { icon: FileText, label: "Reports", href: "/reports" },
   { icon: Target, label: "Focus Mode", href: "/focus" },
-  { icon: Settings, label: "Settings", href: "/settings" },
 ];
 
 export const AppLayout = () => {
@@ -275,11 +274,6 @@ export const AppLayout = () => {
               <span className="text-sm font-medium">Timezone</span>
               <span className="text-sm text-slate-500">PST (UTC-8)</span>
             </div>
-          </div>
-          <div className="pt-2">
-            <Link to="/settings" onClick={() => setIsProfileModalOpen(false)}>
-              <Button variant="outline" className="w-full justify-center">Manage Account</Button>
-            </Link>
           </div>
         </div>
       </Modal>

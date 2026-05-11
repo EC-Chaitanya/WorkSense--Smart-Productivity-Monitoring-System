@@ -8,7 +8,6 @@ import { Dashboard } from "./pages/Dashboard";
 import { Analytics } from "./pages/Analytics";
 import { Reports } from "./pages/Reports";
 import { FocusMode } from "./pages/FocusMode";
-import { Settings } from "./pages/Settings";
 
 export const router = createBrowserRouter([
   {
@@ -27,7 +26,6 @@ export const router = createBrowserRouter([
       { path: "dashboard", Component: Dashboard },
       { path: "analytics", Component: Analytics },
       { path: "reports", Component: Reports },
-      { path: "settings", Component: Settings },
     ],
   },
   {
@@ -38,4 +36,6 @@ export const router = createBrowserRouter([
     path: "*",
     Component: () => <Navigate to="/" replace />,
   },
-]);
+], {
+  basename: "/WorkSense--Smart-Productivity-Monitoring-System"
+});
